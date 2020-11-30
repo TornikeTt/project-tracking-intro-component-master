@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" />
+    <!--for font family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="log"/>
+        <nav>
+            <ul>
+                <li>Product</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>
+                   <div class="circle"></div>
+                </li>
+                <li class="login">Login</li>
+            </ul>
+        </nav>
+        <img class="hamburger" id="Hambur" onclick="show()" src="images/icon-hamburger.svg" alt="hamburger menu" />
+        <!--for mobile-->
+        <div class="menu" id="MensuList">
+            <div class="menu-items">
+                <li>Product</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <hr>
+                <li class="login2">Login</li>
+            </div>
+        </div>
+        <!--for mobile-->
+    </header>
+    
+    <main>
+        <div class="backgroundRight"></div>
+        <div class="main-wrapper">
+            <div class="down-left-side">
+                <div class="firstP">
+                    <p class="new">New</p>
+                    <p class="Monograph">Monograph Dashboard</p>
+                </div>
+                <h1>Powerful insights into your team</h1>
+
+                <p class="project">Project planning and time tracking for agile teams </p>
+
+                <div class="buttonAndText">
+                    <button>Schedule a demo</button>
+                    <p class="seeLive">to see a live preview</p>
+                </div>
+            </div>
+
+            <div class="down-right-side">
+                <img src="images/illustration-devices.svg" alt="illustration devices" />
+            </div>
+        </div>        
+    </main>
+
+</body>
+<script src="script.js"></script>
+</html>

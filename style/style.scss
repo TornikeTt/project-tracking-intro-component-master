@@ -1,0 +1,93 @@
+@import "./VariablesAndMixin";
+@import "./Header";
+@import "./main";
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+.hamburger , .menu{
+    display:none;
+}
+
+@media (max-width: 375px){
+    header{
+        ul{
+            display:none;
+        }
+        .hamburger{
+            display:inline-block;
+            z-index: 2;
+        }
+        /*menu only for mobile 375px*/
+        .menu{
+            display:inline-block;
+            position:absolute;
+            width:20px;
+            height:20px;
+            background-color: white;
+            margin-left: 280px;
+            transform: rotate(45deg);
+            opacity:0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+            .menu-items{
+                @include flex(column , space-evenly , center);
+                width: 100%;
+                height: 100%;
+                font-size:18px;
+                text-transform: uppercase;
+                list-style: none;
+                hr{
+                    width:80%;
+                    margin:0px auto;
+                }
+                .login2{
+                    color: hsl(231, 7%, 65%);
+                }
+            }
+        }
+    }
+
+    main{
+        width:375px;
+        height: 650px;
+        overflow: none;
+        .backgroundRight{
+            width:200px;
+            height: 430px;
+        }
+
+        .main-wrapper{
+            @include flex(column , space-between , center);
+        }
+
+        .down-left-side{
+            margin-top: 80px;
+            h1{
+                font-size:30px;
+            }
+            .buttonAndText{
+                margin-top: 40px;
+                .seeLive{
+                    margin-left: 10px;
+                    font-size:12px;
+                    letter-spacing: 0px;
+                }
+            }
+        }
+
+        .down-right-side{
+            order: -1;
+            margin-right:-150px;
+            img{
+                width:500px;
+            }
+        }
+    }
+}
+

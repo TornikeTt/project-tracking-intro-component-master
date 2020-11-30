@@ -1,0 +1,30 @@
+header{
+    @include flex(row , space-between , center);
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 80%;
+    height:50px;
+    margin: 30px auto;
+    ul{
+        @include flex(row , none , center);
+        list-style: none;
+        text-transform: uppercase;
+        li{
+            cursor: pointer;
+            margin-right: 20px;
+            font-weight: bold;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .circle{
+            width:5px;
+            height: 5px;
+            border-radius: 50px;
+            background-color:hsl(231, 7%, 65%);
+            margin-top: 3px;
+        }
+        .login{
+            color:hsl(231, 7%, 65%)
+        }
+    }
+}
