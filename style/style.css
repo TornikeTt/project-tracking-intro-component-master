@@ -18,7 +18,7 @@ header {
   margin: 30px auto;
 }
 
-header ul {
+header .ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,17 +36,17 @@ header ul {
   text-transform: uppercase;
 }
 
-header ul li {
+header .ul li {
   cursor: pointer;
   margin-right: 20px;
   font-weight: bold;
 }
 
-header ul li:hover {
+header .ul li:hover {
   text-decoration: underline;
 }
 
-header ul .circle {
+header .ul .circle {
   width: 5px;
   height: 5px;
   border-radius: 50px;
@@ -54,7 +54,7 @@ header ul .circle {
   margin-top: 3px;
 }
 
-header ul .login {
+header .ul .login {
   color: #a0a1ac;
 }
 
@@ -216,15 +216,12 @@ body {
 }
 
 @media (max-width: 375px) {
-  header {
-    /*menu only for mobile 375px*/
-  }
-  header ul {
+  header .ul {
     display: none;
   }
   header .hamburger {
     display: inline-block;
-    z-index: 2;
+    z-index: 10;
   }
   header .menu {
     display: inline-block;
